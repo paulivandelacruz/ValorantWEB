@@ -35,8 +35,24 @@ html, body{
     letter-spacing: 1px;
 }
 
+.nav-link:hover {
+    border-top: 1px solid red;
+    
+}
+
 .navbar-nav {
     text-align: left;
+}
+
+.menu-bar .navbar-toggler {
+    padding-right: 5px;
+    outline: none!important;
+    border: none!important;
+}
+
+.navbar .fa{
+    color: white;
+    font-size: 20px;
 }
 
 
