@@ -169,7 +169,7 @@ article p {
     left: 205px;
 }
 
-/*For Mobile Phone*/
+/*For Mobile Phone*
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -225,7 +225,7 @@ article p {
     }
 }
 
-/*For Tablets*/
+/*For Tablets*
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     
