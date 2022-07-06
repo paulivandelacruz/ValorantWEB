@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Odor+Mean+Chey&display=swap');
 
 *{
     margin: 0;
@@ -67,7 +68,7 @@ html, body{
 
 /*left-column*/
 
-.left-col{
+.col-sm-3{
     flex-basis: 30%;
     height: 100%;
     background: rgb(216, 27, 27);
@@ -93,31 +94,33 @@ video {
 
 article {
     margin: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 article p {
     margin: 15px;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Odor Mean Chey', serif;
     text-align: justify;
     font-size: 15px;
     word-spacing: 5px;
-    color: white;
+    color: black;
 }
 
 /*right-column*/
 
-.right-col{
+.col-sm-6{
     flex-basis: 70%;
     height: 100%;
     position: relative;
-    background: url(images/Haven.png);
+    background: url(images/wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.right-col h1{
+.col-sm-6 h1{
     margin-top: 12rem;
     font-size: 60px;
     font-family: 'Staatliches', cursive;
@@ -128,12 +131,24 @@ article p {
     text-align: center;
 }
 
-.right-col h2 {
+.col-sm-6 h2 {
     font-size: 120px;
-    letter-spacing: 10px;
-    color: #fc4a4ae8;
+    letter-spacing: 20px;
+    color: rgb(216, 27, 27);
     font-family: 'Russo One', sans-serif;
     text-align:center;
+}
+
+.btn {
+    align-items: center;
+    text-align: center;
+    margin-left: 23rem;
+    margin-top: 4rem;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(216, 27, 27);
+    letter-spacing: 10px;
 }
 
 .red-bar {
@@ -154,31 +169,84 @@ article p {
     left: 205px;
 }
 
-@media only screen and (max-width: 768px) {
+/*For Mobile Phone*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navbar-brand img{
+        margin-left: 10px;
+    }
+    
+    .nav-link{
+        margin-left: 1px;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .col-sm-6 h1{
+        font-size: 30px;
+        font-family: 'Staatliches', cursive;
+        color: rgb(233, 229, 229);
+        letter-spacing: 10px;
+        word-spacing: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col-sm-6 h2 {
+        font-size: 50px;
+        letter-spacing: 10px;
+        color: rgb(216, 27, 27);
+        font-family: 'Russo One', sans-serif;
+        text-align:center;
+        margin-bottom: 120%;
+    }
+
+    .red-bar {
+        position: absolute;
+        height: 5px;
+        width: 200px;
+        background: rgb(216, 27, 27);
+        top: 40px;
+        left: 0px;
+    }
+    
+    .red-bar span{
+        position: absolute;
+        height: 5px;
+        width: 6px;
+        background: rgb(216, 27, 27);;
+        top: 0;
+        left: 205px;
+    }
+}
+
+/*For Tablets*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     
     .navbar-brand img{
         margin-left: 10px;
     }
     
     .nav-link{
-        margin-left: 10px;
+        margin-left: 1px;
+        font-size: 12px;
         justify-content: center;
     }
 
-    .right-col h1 {
-        text-align: left;
-        font-size: 30px;
-        margin-left: 77px;
+    .main-body {
+        flex-direction: row;
     }
 
-    .right-col h2 {
-        font-size: 50px;
-        letter-spacing: 10px;
-        color: #fc4a4ae8;
-        font-family: 'Russo One', sans-serif;
-        text-align:left;
-        margin-left: 17px;
-    }
 }
+
+
+
+
 
 
