@@ -175,13 +175,16 @@ article p {
     left: 205px;
 }
 
+/*Agent Roles*/
+
 .Sample-Agents {
     background-color: #FFFDD0;
+    overflow-x: hidden;
 }
 
 .Sample-Agents h1{
     margin-left: 23rem;
-    padding-top: 60px;
+    padding-top: 40px;
     font-family: 'Russo One', sans-serif;
     letter-spacing: 10px;
     font-size: 5rem;
@@ -204,61 +207,89 @@ article p {
     justify-items: center;
 }
 
-.section-duelists h2 {
-    margin-left: 30px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 10px;
-    color:rgb(216, 27, 27);
-}
+/*deulist*/
 
-.section-duelists {
-    display: flex;
-    justify-content: space-between;
-    background-color:#FFFDD0;
-    padding: 40px;
-    margin: 4rem auto 0 auto;
-}
-
-.section-duelists img {
-    width: 45%;
-}
-
-.section-duelists p {
-    color: black;
-    text-align: justify;
-    margin-left: 40px;
-    font-family: 'Finlandica', sans-serif;
-    word-spacing: 5px;
-    font-size: 17px;
-
-}
-
-.section-initiator {
-    display: flex;
+.duelist-row {
     justify-content: space-between;
     background-color:#FFFDD0;
     padding: 30px;
     margin: 0rem auto 0 auto;
 }
 
-.section-initiator h2 {
-    float: right;
+.duelist-row h2 {
     font-family: 'Russo One', sans-serif;
     font-size: 4rem;
     letter-spacing: 10px;
     color:rgb(216, 27, 27);
 }
 
-.section-initiator img {
-    width: 45%;
-    margin-left: 40px;
+.duelist-row img {
+    border-radius: 50px;
+    margin-top: 110px;
 }
 
-.section-initiator p {
+.duelist-row p {
     color: black;
     text-align: justify;
-    float: right;
+    font-family: 'Finlandica', sans-serif;
+    word-spacing: 5px;
+    font-size: 17px;
+}
+
+/*initiator*/
+
+.w3-row {
+    justify-content: space-between;
+    background-color:#FFFDD0;
+    padding: 30px;
+    margin: 0rem auto 0 auto;
+}
+
+.w3-row h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color:rgb(216, 27, 27);
+    margin-top: 40px;
+}
+
+.w3-row img {
+    border-radius: 50px;
+    margin-top: 35%;
+}
+
+.w3-row p {
+    color: black;
+    text-align: justify;
+    font-family: 'Finlandica', sans-serif;
+    word-spacing: 5px;
+    font-size: 17px;
+}
+
+/*Sentinels*/
+
+.sentinel-row {
+    justify-content: space-between;
+    background-color:#FFFDD0;
+    padding: 30px;
+    margin: 0rem auto 0 auto;
+}
+
+.sentinel-row h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color:rgb(216, 27, 27);
+}
+
+.sentinel-row img {
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.sentinel-row p {
+    color: black;
+    text-align: justify;
     font-family: 'Finlandica', sans-serif;
     word-spacing: 5px;
     font-size: 17px;
